@@ -20,13 +20,13 @@ export class InfoPaginaService {
               .subscribe((resp: InfoPagina) => {
                 this.cargada = true;
                 this.info = resp;
-                console.log(resp);
+
                 // console.log(resp['twitter']);
 
               });
   }
 
-  private cargarInfo(){
+  private cargarInfo() {
     this._http.get('assets/data/data-pagina.json')
               .subscribe((resp: InfoPagina) => {
                 this.cargada = true;
@@ -42,7 +42,6 @@ export class InfoPaginaService {
     this._http.get('https://angular-html-fdef1.firebaseio.com/equipo.json')
               .subscribe((resp: any[] ) => {
                 this.equipo = resp;
-                console.log(resp);
 
               });
   }
