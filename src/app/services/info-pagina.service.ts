@@ -11,8 +11,7 @@ export class InfoPaginaService {
   cargada = false;
   equipo: any;
 
-  constructor( private _http: HttpClient) {
-    console.log('Servicio Listo');
+  constructor( private _http: HttpClient) { 
     this.cargarEquipo();
 
     // Leer el archvivo JSON
